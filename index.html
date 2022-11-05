@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="/main.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="container text-center">
+        <form action = "" id = "search">
+            <div class="mb-3 text-center">
+              <label for="enterCity" class="form-label mt-3">Search Anywhere</label>
+              <input type="text" class="form-control" name = "city" id="search" placeholder="Enter city...">
+              <div id="caption" class="form-text">We provide the most accurate results for small talk!</div>
+              <input type="submit" value="Submit" class="btn btn-primary mt-3">
+            </div>
+          </form>
+    </div>
+
+
+    <div class="container text-center" id = "cityStats">
+
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <div class="card border-danger mt-2" style="width: 18rem;">
+                    <div class="card-body" id = "cardBody">
+                        <h5 class="card-title text-danger">High</h5>
+                        <p class="card-text" id = "high"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <div class="card border-primary mt-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Low</h5>
+                        <p class="card-text" id = "low"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <div class="card border-dark mt-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Current</h5>
+                        <p class="card-text" id = "current"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <div class="card border-success mt-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Feels Like</h5>
+                        <p class="card-text" id = "feelsLike"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
