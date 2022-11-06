@@ -24,6 +24,13 @@ import { myAPIKey } from "./API_key.js";
 
     function buildWeather(cityObj){
 
+        let forecast = document.getElementById('forecast');
+        let desc = cityObj.weather[0].description;
+        forecast.innerHTML = `Today's Forecast: ${desc}`;
+
+        let cityName = document.getElementById('cityName');
+        cityName.innerHTML = cityObj.name;
+
         let highBody = document.getElementById('high');
         highBody.innerHTML = `${cityObj.main.temp_max}\u00B0 F`;
 
@@ -35,6 +42,8 @@ import { myAPIKey } from "./API_key.js";
 
         let feelsLikeBody = document.getElementById('feelsLike')
         feelsLikeBody.innerHTML = `${cityObj.main.feels_like}\u00B0 F`;
+
+        return desc.toUpperCase();
 
     }
 
